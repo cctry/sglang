@@ -6,8 +6,6 @@ on:
     paths:
       - ".github/workflows/release-docker-npu-nightly.yml"
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.sha }}
